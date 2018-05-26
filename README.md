@@ -37,7 +37,8 @@ string s_output = "./Processed_Image";              //输出飞机舱门检测�
 对融合后的矩形图的轮廓，计算轮廓的[最小外接矩形](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate%20Results/7.png)，然后根据占空比、长宽比和面积等条件进行筛选，最后得到筛选后的融合后的矩形图的轮廓的[最小外接矩形](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate%20Results/8.png).
 
 经过第三步，在原图上检测到的所有轮廓的最小外接矩形
-<br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate%20Results/10.png)
+<br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/10.png)
+
 最终检测到的飞机舱门
 <br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate%20Results/9.png)
 
