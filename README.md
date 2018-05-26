@@ -9,7 +9,7 @@ Author: [Qichao Wu](https://github.com/deepthinking-qichao)
 
 ### 运行环境
 VS2013+OpenCV1.0
-<br>项目只包含一个cpp文件<[main.cpp]()>，输入输出参数如下：
+<br>项目只包含一个cpp文件<[main.cpp](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/main.cpp)>，输入输出参数如下：
 ```
 string s_input = "./Original_Imagee";               //输入原始图片
 string s_output = "./Processed_Image";              //输出飞机舱门检测结果
@@ -23,11 +23,11 @@ string s_output = "./Processed_Image";              //输出飞机舱门检测�
 对canny边缘图施加闭操作，闭操作可以排除小型黑色区域，初步连接断开的边缘，按照边缘断裂的具体情况，选择合适大小的核，进行膨胀运算，进一步连接断开边缘，得到形态学处理后的[结果图](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/3.png).
 
 ### 第三步
-对形态学处理后的canny边缘图进行轮廓检测，并用树状轮廓进行存储，遍历每一层轮廓（总共四层），对于每一个轮廓，判断其轮廓包含点数、占空比和轮廓面积是否满足一定的条件，若不符合条件，则从轮廓容器中剔除，从而进行矩形轮廓的初步筛选，并对筛选后的轮廓计算[最小外接矩形](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_20Results/4.png).
+对形态学处理后的canny边缘图进行轮廓检测，并用树状轮廓进行存储，遍历每一层轮廓（总共四层），对于每一个轮廓，判断其轮廓包含点数、占空比和轮廓面积是否满足一定的条件，若不符合条件，则从轮廓容器中剔除，从而进行矩形轮廓的初步筛选，并对筛选后的轮廓计算[最小外接矩形](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/4.png).
 ***注意：计算长宽比时，若矩形角度是否大于45度，则长宽比调整为原来的倒数
 
 ### 第四步
-对初步筛选后的轮廓的最小外接矩形往较长边延伸，进行内部填充（即矩形的内部变为白色，矩形外部区域为黑色），对相邻嵌套的矩形实现[融合](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_20Results/5.png).
+对初步筛选后的轮廓的最小外接矩形往较长边延伸，进行内部填充（即矩形的内部变为白色，矩形外部区域为黑色），对相邻嵌套的矩形实现[融合](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/5.png).
 ***注意：往较长边延伸是为了弥补第二步对边缘膨胀运算后内层轮廓较原来收缩，同时消除舱门前缆绳的干扰***
 
 ### 第五步
