@@ -40,7 +40,7 @@ string s_output = "./Processed_Image";              //输出飞机舱门检测�
 <br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/10.png)
 
 最终检测到的飞机舱门
-<br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate%20Results/9.png)
+<br>![image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/blob/master/Intermediate_Results/9.png)
 
 原始的飞机舱门图片在文件夹[/Original_Image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/tree/master/Original%20Image)中，飞机舱门检测结果图在文件夹[/Processed_Image](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/tree/master/Processed%20Image)中，中间结果在文件夹[/Intermediate_Results](https://github.com/deepthinking-qichao/Aircraft-door-detection-based-on-contour-fusion/tree/master/Intermediate%20Results)中.
 
